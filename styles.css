@@ -44,7 +44,8 @@
 
 @media (min-width: 1261px) {
     .image-row {
-        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));    }
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
 }
 
 @media (min-width: 1536px) {
@@ -77,6 +78,7 @@ header {
     padding: 20px;
     background-color: transparent;
     z-index: 1;
+    height: 100px;
 }
 
 /*.logo {
@@ -96,7 +98,7 @@ header {
 .nav-list li {
     display: flex;
     justify-content: center;
-    margin: 8px;
+    margin: 40px;
     cursor: pointer;
 }
 

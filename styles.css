@@ -81,6 +81,10 @@
     footer {
         display: block;
     }
+
+    .content-on-image-two div svg {
+        width: 204px;
+    }
 }
 
 @media (min-width: 964px) {
@@ -137,14 +141,10 @@
     }
 }
 
-
 @media (min-width: 1261px) {
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
-}
-
-@media (min-width: 1536px) {
 }
 
 body {
@@ -212,6 +212,17 @@ header {
     position: absolute;
     top: 50%;
     left: 44%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+}
+
+.content-on-image-two {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: auto;
@@ -426,4 +437,5 @@ footer ul li {
     font-weight: lighter;
     font-family: Verdana, sans-serif;
     color: rgb(143, 143, 143);
+    cursor: pointer;
 }

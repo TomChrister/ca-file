@@ -71,18 +71,85 @@ header {
 
 .content-on-image {
     position: absolute;
-    top: 82%;
-    left: 46%;
+    top: 64%;
+    left: 45%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: auto;
-}
-
-.movie-poster {
-    padding-bottom: 16px;
 }
 
 .content-on-image .section-content .movie-poster img {
     height: 160px;
 }
 
+.movie-title {
+    font-family: Barlow, sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.btn-container {
+    display: inline-flex;
+    gap: 6px;
+    padding-bottom: 46px;
+}
+
+.see-now {
+    width: 116px;
+    height: 34px;
+    background: #FF961A;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-pluss {
+    width: 42px;
+    height: 34px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content-movie {
+    margin-left: 25px;
+}
+
+.movie-category {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.movie-category p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.movie-category span {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.bonus {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bolder;
+    padding-top: 30px;
+    font-size: 24px;
+}
+
+.bonus img {
+    width: 94%;
+    height: auto;
+}

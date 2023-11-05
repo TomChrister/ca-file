@@ -25,6 +25,10 @@
     .footer-desktop {
         display: none;
     }
+
+    .svg-imdb-1 {
+        width: 12px;
+    }
 }
 @media (min-width: 640px) {
     .image-row {
@@ -65,13 +69,13 @@
     .content-on-image .see-now {
         width: 115px;
         height: 32px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
-    .content-on-image .btn-pluss {
+    .content-on-image .btn-plus {
         width: 42px;
         height: 32px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .footer-desktop {
@@ -84,6 +88,10 @@
 
     .content-on-image-two div svg {
         width: 204px;
+    }
+
+    .svg-imdb-1 {
+        width: 30px;
     }
 }
 
@@ -124,14 +132,18 @@
 
     .content-on-image .see-now {
         width: 115px;
-        height: 42px;
+        height: 40px;
         font-size: 20px;
     }
 
-    .content-on-image .btn-pluss {
-        width: 42px;
-        height: 42px;
-        font-size: 22px;
+    .content-on-image .btn-plus {
+        width: 48px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .svg-imdb-1 {
+        width: 40px;
     }
 }
 
@@ -162,11 +174,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: transparent;
     z-index: 1;
-    height: 100px;
+    height: 60px;
     font-family: Barlow, sans-serif;
 }
 
@@ -278,24 +288,20 @@ header {
     align-items: center;
 }
 
-.btn-pluss {
+.btn-plus {
     width: 28px;
     height: 20px;
     background: #282727;
     color: white;
     border-radius: 8px;
     border: 0;
-    font-size: 10px;
+    font-size: 12px;
     cursor: pointer;
-}
-
-.dots {
-
 }
 
 .action-btn-div {
     display: flex;
-    margin-left: 16px;
+    margin-left: 14px;
     margin-top: 20px;
 }
 
@@ -344,6 +350,23 @@ header {
     border-radius: 8px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.image-row img:hover {
+    filter: grayscale(100%);
+}
+
+.image-row img:hover::after {
+    content: url("");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("assets/images/play-button.png.jpg");
+    background-size: cover;
 }
 
 footer {

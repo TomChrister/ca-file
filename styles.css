@@ -182,7 +182,7 @@ header {
     align-items: center;
     background-color: transparent;
     z-index: 1;
-    height: 60px;
+    height: 75px;
     font-family: Barlow, sans-serif;
 }
 
@@ -201,6 +201,14 @@ header {
     justify-content: center;
     margin: 30px;
     cursor: pointer;
+}
+
+.nav-list li {
+    transition: all 0.3s ease;
+}
+
+.nav-list li:hover {
+    text-decoration: underline;
 }
 
 .nav-icons {

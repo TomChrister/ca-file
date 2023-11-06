@@ -9,6 +9,11 @@
     padding-bottom: 60px;
 }
 
+.mobile-header {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 @media (min-width: 500px) {
     .mobile-header {
         display: none;
@@ -42,7 +47,6 @@
     }
 }
 
-
 @media (min-width: 725px) {
     .similar-movies img:nth-child(n+3) {
         display: flex;
@@ -72,11 +76,24 @@
 
     .btn-container-2 .see-now-2 {
         display: flex;
+        width: 116px;
+        height: 34px;
     }
 
     .btn-container-2 .btn-plus-2 {
         display: flex;
     }
+}
+
+.btn-container-2 .see-now-2 {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.btn-container-2 .btn-plus-2 {
+    height: 40px;
+    width: 44px;
 }
 
 .movie-category-container {
@@ -99,11 +116,67 @@
     font-size: 16px;
 }
 
+.movie-title-2 {
+    font-family: Barlow, sans-serif;
+    font-size: 52px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.see-now-2 {
+    width: 116px;
+    height: 34px;
+    background: #FF961A;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.see-now-2:hover {
+    background-color: #d77d12;
+}
+
+.btn-container-2 .btn-plus-2 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-plus-2:hover {
+    background-color: #181717;
+}
+
 @media (min-width: 925px) {
     .movie-category-container {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
+    }
+
+    .movie-title-2 {
+        font-size: 52px;
+    }
+
+    .btn-container-2 .see-now-2 {
+        width: 140px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .btn-container-2 .btn-plus-2 {
+        height: 40px;
+        width: 44px;
     }
 }
 
@@ -120,6 +193,12 @@
 
     .footer-desktop {
         display: block;
+    }
+}
+
+@media (min-width: 971px) {
+    .mobile-header {
+        display: flex;
     }
 }
 
@@ -143,7 +222,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #282727;
+    background-color: #181717;
 }
 
 header{
@@ -183,6 +262,7 @@ header{
     align-items: center;
     color: white;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .fa-user {
@@ -223,44 +303,9 @@ header{
     gap: 40px;
 }
 
-.movie-title-2 {
-    font-family: Barlow, sans-serif;
-    font-size: 28px;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 16px;
-}
-
 .btn-container-2 {
     display: flex;
     gap: 10px;
-}
-
-.see-now-2 {
-    width: 116px;
-    height: 34px;
-    background: #FF961A;
-    color: white;
-    border-radius: 8px;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.btn-container-2 .btn-plus-2 {
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    height: 34px;
-    background-color: rgb(27, 27, 27);
-    color: white;
-    border-radius: 8px;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .movie-title {
@@ -291,10 +336,14 @@ header{
     align-items: center;
 }
 
+.see-now:hover {
+    background-color: #d77d12;;
+}
+
 .btn-plus {
     width: 42px;
     height: 34px;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(60, 60, 60);
     color: white;
     border-radius: 8px;
     border: 0;
@@ -302,29 +351,13 @@ header{
     cursor: pointer;
 }
 
+.btn-plus:hover {
+    background-color: #333131;
+}
+
 .content-movie {
     margin: 0 25px 0 25px;
 }
-
-/*.movie-category-container {
-    display: block;
-    flex-wrap: nowrap;
-    gap: 10px;
-}
-
-.movie-category-1 {
-    flex: 1 1 100%;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-.movie-category-2 {
-    flex: 1 1 100%;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}*/
 
 .movie-category-1 p {
     font-size: 16px;

@@ -9,6 +9,12 @@
     padding: 16px;
 }
 
+.mobile-header {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 @media (min-width: 500px) {
     .mobile-header {
         display: none;
@@ -69,7 +75,7 @@
     .content-on-image .see-now {
         width: 115px;
         height: 32px;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .content-on-image .btn-plus {
@@ -131,7 +137,7 @@
     }
 
     .content-on-image .see-now {
-        width: 115px;
+        width: 138px;
         height: 40px;
         font-size: 20px;
     }
@@ -163,7 +169,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #282727;
+    background-color: #181717;
 }
 
 header {
@@ -203,6 +209,7 @@ header {
     align-items: center;
     color: white;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .fa-user {
@@ -276,7 +283,7 @@ header {
 
 .see-now {
     width: 88px;
-    height: 20px;
+    height: 24px;
     background: #FF961A;
     color: white;
     border-radius: 8px;
@@ -284,13 +291,17 @@ header {
     font-size: 12px;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.see-now:hover{
+    background-color: #d77d12;
 }
 
 .btn-plus {
     width: 28px;
-    height: 20px;
+    height: 24px;
     background: #282727;
     color: white;
     border-radius: 8px;
@@ -299,11 +310,14 @@ header {
     cursor: pointer;
 }
 
+.btn-plus:hover {
+    background-color: #181717;
+}
+
 .action-btn-div {
     display: flex;
     margin-left: 14px;
-    margin-top: 20px;
-}
+    margin-top: 20px;}
 
 .action-btn {
     font-size: 16px;
@@ -317,7 +331,8 @@ header {
     border: 0;
     margin-right: 28px;
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
 }
 
 .popular-btn {
@@ -332,7 +347,8 @@ header {
     gap: 46px;
     border: 0;
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
 }
 
 .text-over-movies {
@@ -353,20 +369,35 @@ header {
     transition: filter 0.3s ease;
 }
 
-.image-row img:hover {
+.img-container:hover {
     filter: grayscale(100%);
 }
 
-.image-row img:hover::after {
-    content: url("");
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container img {
+    transition: filter 0.3s ease;
+    width: 100%;
+}
+
+.play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    background-image: url("assets/images/play-button.png.jpg");
-    background-size: cover;
+    font-size: 2em;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .play-btn {
+    opacity: 1;
+    cursor: pointer;
+    font-size: 60px;
 }
 
 footer {
@@ -383,6 +414,7 @@ footer ul {
 footer li {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 footer li:first-child {

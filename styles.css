@@ -310,7 +310,7 @@ header {
 .btn-plus {
     width: 28px;
     height: 24px;
-    background: #282727;
+    background: rgb(27, 27, 27);
     color: white;
     border-radius: 8px;
     border: 0;
@@ -319,7 +319,7 @@ header {
 }
 
 .btn-plus:hover {
-    background-color: #181717;
+    background-color: #312f2f;
 }
 
 .action-btn-div {

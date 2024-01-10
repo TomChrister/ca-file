@@ -20,13 +20,13 @@
         display: none;
     }
 
-    .section-text .movie-text {
+    /*.section-text .movie-text {
         font-size: 20px;
-    }
+    }*/
 
-    .section-text .sub-text {
+    /*.section-text .sub-text {
         font-size: 12px;
-    }
+    }*/
 
     .footer-desktop {
         display: none;
@@ -64,13 +64,13 @@
         margin-left: 16px;
     }*/
 
-    .content-on-image .section-text .movie-text {
+    /*.content-on-image .section-text .movie-text {
         font-size: 42px;
-    }
+    }*/
 
-    .content-on-image .section-text .sub-text {
+    /*.content-on-image .section-text .sub-text {
         font-size: 22px;
-    }
+    }*/
 
     .content-on-image .see-now {
         width: 106px;
@@ -128,13 +128,13 @@
         margin-left: 16px;
     }
 
-    .content-on-image .section-text .movie-text {
+    /*.content-on-image .section-text .movie-text {
         font-size: 56px;
-    }
+    }*/
 
-    .content-on-image .section-text .sub-text {
+    /*.content-on-image .section-text .sub-text {
         font-size: 30px;
-    }
+    }*/
 
     .content-on-image .see-now {
         width: 138px;
@@ -264,12 +264,12 @@ header {
 
 .movie-text {
     margin: 0;
-    font-size: 24px;
+    font-size: 3vw;
     font-family: "SF Hollywood Hills", sans-serif;
 }
 
 .sub-text {
-    font-size: 16px;
+    font-size: 2vw;
     font-family: Barlow, sans-serif;
     font-weight: 300;
     padding-bottom: 4px;

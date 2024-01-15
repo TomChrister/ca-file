@@ -41,9 +41,9 @@
         grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
     }
 
-    .action-btn-div .action-btn {
+    /*.action-btn-div .action-btn {
         margin-left: 0;
-    }
+    }*/
 
     .footer-desktop {
         display: none;
@@ -56,9 +56,9 @@
         padding: 30px;
     }
 
-    .content-under-image .text-over-movies {
+    /*.content-under-image .text-over-movies {
         margin-left: 30px;
-    }
+    }*/
 
     /*.action-btn-div .action-btn {
         margin-left: 16px;
@@ -120,13 +120,13 @@
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
-    .content-under-image .text-over-movies {
+    /*.content-under-image .text-over-movies {
         margin-left: 30px;
-    }
+    }*/
 
-    .action-btn-div .action-btn {
+    /*.action-btn-div .action-btn {
         margin-left: 16px;
-    }
+    }*/
 
     /*.content-on-image .section-text .movie-text {
         font-size: 56px;
@@ -178,12 +178,13 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
     z-index: 1;
     height: 75px;
     font-family: Barlow, sans-serif;
+    margin: 0 32px 0 32px;
 }
 
 .nav-list {
@@ -324,8 +325,8 @@ header {
 
 .action-btn-div {
     display: flex;
-    margin-left: 16px;
-    margin-top: 20px;}
+    margin: 20px 0 0 30px;
+}
 
 .action-btn {
     font-size: 16px;
@@ -363,8 +364,7 @@ header {
     font-family: Barlow, sans-serif;
     font-size: 26px;
     color: white;
-    margin-left: 16px;
-    margin-top: 12px;
+    margin: 12px 0 0 30px;
 }
 
 .image-row img {

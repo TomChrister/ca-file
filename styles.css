@@ -15,35 +15,23 @@
     cursor: pointer;
 }
 
+.header-logo svg {
+    display: flex;
+}
+
 @media (min-width: 500px) {
     .mobile-header {
         display: none;
     }
 
-    /*.section-text .movie-text {
-        font-size: 20px;
-    }*/
-
-    /*.section-text .sub-text {
-        font-size: 12px;
-    }*/
-
     .footer-desktop {
         display: none;
-    }
-
-    .svg-imdb-1 {
-        width: 12px;
     }
 }
 @media (min-width: 640px) {
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
     }
-
-    /*.action-btn-div .action-btn {
-        margin-left: 0;
-    }*/
 
     .footer-desktop {
         display: none;
@@ -53,36 +41,8 @@
 @media (min-width: 744px) {
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(209px, 1fr));
-        padding: 12px 32px 24px 32px;
+        padding: 12px 32px 44px 32px;
     }
-
-    /*.content-under-image .text-over-movies {
-        margin-left: 30px;
-    }*/
-
-    /*.action-btn-div .action-btn {
-        margin-left: 16px;
-    }*/
-
-    /*.content-on-image .section-text .movie-text {
-        font-size: 42px;
-    }*/
-
-    /*.content-on-image .section-text .sub-text {
-        font-size: 22px;
-    }*/
-
-    /*.content-on-image .see-now {
-        width: 106px;
-        height: 32px;
-        font-size: 15px;
-    }*/
-
-    /*.content-on-image .btn-plus {
-        width: 42px;
-        height: 32px;
-        font-size: 17px;
-    }*/
 
     .footer-desktop {
         display: none;
@@ -91,14 +51,6 @@
     footer {
         display: block;
     }
-
-    .content-on-image-two div svg {
-        width: 204px;
-    }
-
-    /*.svg-imdb-1 {
-        width: 30px;
-    }*/
 }
 
 @media (min-width: 964px) {
@@ -119,38 +71,6 @@
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
-
-    /*.content-under-image .text-over-movies {
-        margin-left: 30px;
-    }*/
-
-    /*.action-btn-div .action-btn {
-        margin-left: 16px;
-    }*/
-
-    /*.content-on-image .section-text .movie-text {
-        font-size: 56px;
-    }*/
-
-    /*.content-on-image .section-text .sub-text {
-        font-size: 30px;
-    }*/
-
-    /*.content-on-image .see-now {
-        width: 138px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .content-on-image .btn-plus {
-        width: 48px;
-        height: 40px;
-        font-size: 20px;
-    }*/
-
-    /*.svg-imdb-1 {
-        width: 40px;
-    }*/
 }
 
 @media (min-width: 1200px) {
@@ -184,8 +104,7 @@ header {
     z-index: 1;
     height: 86px;
     font-family: Barlow, sans-serif;
-    margin: 0 32px 0 32px;
-}
+    margin: 0 46px 0 46px;}
 
 .nav-list {
     list-style-type: none;
@@ -216,13 +135,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 1.2rem;
     cursor: pointer;
 }
 
 .fa-user {
-    padding: 24px;
+    padding: 18px;
 }
 
 .image-container {
@@ -273,7 +190,18 @@ header {
     font-size: min(3vw, 26px);
     font-family: Barlow, sans-serif;
     font-weight: 300;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
+}
+
+.sub-text svg {
+    width: min(4vw, 34px);
+}
+
+.svg-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .svg-two {
@@ -292,7 +220,7 @@ header {
 
 .see-now {
     width: 28px;
-    height: 20px;
+    height: 22px;
     background: #FF961A;
     color: white;
     border-radius: 8px;
@@ -310,13 +238,16 @@ header {
 }
 
 .btn-plus {
-    width: 28px;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(5vw, 28px);
+    height: min(4.4vw, 22px);
+    font-size: min(2.4vw, 14px);
     background: rgb(27, 27, 27);
     color: white;
     border-radius: 8px;
     border: 0;
-    font-size: 12px;
     cursor: pointer;
 }
 
@@ -392,8 +323,14 @@ header {
     }
 
     .see-now {
-        width: min(13vw, 115px);
-        height: min(3vw, 30px);
+        width: min(13vw, 122px);
+        height: min(3vw, 32px);
+        font-size: min(1.8vw, 16px);
+    }
+
+    .btn-plus {
+        width: min(3vw, 34px);
+        height: min(3vw, 32px);
         font-size: min(1.8vw, 16px);
     }
 
@@ -469,8 +406,8 @@ footer ul li {
     padding: 18px 28px 18px 28px;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-family: Helvetiva, sans-serif;
 }
 
 .fa-circle-chevron-down {

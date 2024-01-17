@@ -15,7 +15,10 @@
     position: absolute;
     top: 30%;
     left: 30%;
-    gap: 40px;
+}
+
+.svg-imdb {
+    width: 24px;
 }
 
 .similar-movies .img-container1, .img-container2, .img-container3, .img-container4 {
@@ -210,7 +213,7 @@
     .movie-category-container {
         display: flex;
         flex-wrap: nowrap;
-        gap: 10px;
+        gap: 16px;
     }
 
     .movie-title-2 {
@@ -361,6 +364,7 @@ header {
     color: white;
     font-weight: bold;
     padding-bottom: 16px;
+    text-transform: uppercase;
 }
 
 .btn-container {

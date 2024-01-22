@@ -10,10 +10,6 @@ body {
 }
 
 header {
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,6 +91,12 @@ header {
     .footer-desktop {
         display: none;
     }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
 }
 
 @media (min-width: 964px) {
@@ -162,8 +164,32 @@ header {
     color: rgba(255, 150, 26, 1);
 }
 
-.number {
-    padding: 16px;
+.number-one, .number-two, .number-three {
+    padding: 10px;
+    border-radius: 8px;;
+}
+
+.number-one, .number-two, .number-three {
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.number-one:hover {
+    background-color: rgba(255, 150, 26, 1);
+    color: white;
+    border-radius: 8px;
+}
+
+.number-two:hover {
+    background-color: #19B500;
+    color: white;
+    border-radius: 8px;
+}
+
+.number-three:hover {
+    background-color: rgba(0, 53, 167, 1);
+    color: white;
+    border-radius: 8px;
 }
 
 .chat-us {
@@ -199,7 +225,7 @@ header {
     padding: 46px 0 28px 0;
     font-size: 26px;
     font-weight: bold;
-    color: rgba(0, 53, 167, 1)
+    color: rgba(0, 53, 167, 1);
 
 }
 

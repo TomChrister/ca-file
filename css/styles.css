@@ -28,6 +28,7 @@
         display: none;
     }
 }
+
 @media (min-width: 640px) {
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));

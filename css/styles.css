@@ -28,6 +28,7 @@
         display: none;
     }
 }
+
 @media (min-width: 640px) {
     .image-row {
         grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
@@ -128,6 +129,16 @@ header {
 }
 
 .nav-list li:hover {
+    color: #b0aaaa;
+}
+
+.nav-list li a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
     color: #b0aaaa;
 }
 

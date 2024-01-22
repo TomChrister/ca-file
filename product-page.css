@@ -54,11 +54,78 @@
 .mobile-header {
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.header-logo svg {
+    display: flex;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1;
+    height: 86px;
+    font-family: Barlow, sans-serif;
+    margin: 0 46px 0 46px;}
+
+.nav-list {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-list li {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.nav-list li {
+    transition: color 0.3s ease;
+}
+
+.nav-list li:hover {
+    color: #b0aaaa;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-user {
+    padding: 18px;
+}
+
+.svg-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .mobile-header .nav-list li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #b0aaaa;
 }
 
 .header-logo {
@@ -277,57 +344,6 @@ body {
     background-color: #181717;
 }
 
-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    z-index: 1;
-    height: 75px;
-    font-family: Barlow, sans-serif;
-}
-
-.nav-list {
-    list-style-type: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-}
-
-.nav-list li {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    cursor: pointer;
-}
-
-.nav-list li {
-    transition: all 0.3s ease;
-}
-
-.nav-list li:hover {
-    text-decoration: underline;
-}
-
-.nav-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.fa-user {
-    padding: 16px;
-}
-
 .image-container {
     position: relative;
 }
@@ -340,10 +356,10 @@ header {
 
 .content-on-image {
     position: absolute;
-    top: 62%;
-    left: 42%;
+    top: 64%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    width: 74%;
+    width: 70%;
     height: auto;
 }
 
@@ -370,7 +386,7 @@ header {
 .btn-container {
     display: inline-flex;
     gap: 6px;
-    padding-bottom: 46px;
+    padding-bottom: 16px;
 }
 
 .see-now {
@@ -478,7 +494,7 @@ header {
     display: flex;
     justify-content: center;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .bonus-text {
@@ -493,8 +509,8 @@ header {
 .similar-movies-text {
     font-family: Arial, sans-serif;
     color: white;
-    font-weight: bolder;
-    padding: 16px 0 8px 0;    font-size: 24px;
+    padding: 16px 0 8px 0;
+    font-size: 24px;
 }
 
 .similar-movies img {

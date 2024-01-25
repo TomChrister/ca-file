@@ -130,7 +130,7 @@ header {
     display: flex;
     justify-content: flex-start;
     color: rgba(255, 255, 255, 0.80);
-    width: 740px;
+    width: min(76vw, 724px);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -267,6 +267,11 @@ footer ul li {
     .mobile-header {
         display: none;
     }
+
+    .svg-container {
+        flex-direction: column;
+        gap: 88px;
+    }
 }
 
 @media (min-width: 964px) {
@@ -280,5 +285,14 @@ footer ul li {
 
     .mobile-header {
         display: flex;
+    }
+}
+
+@media (min-width: 820px) {
+    .svg-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 84px 0 64px 0;
+        flex-direction: row;
     }
 }

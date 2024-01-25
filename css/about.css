@@ -140,7 +140,7 @@ header {
 .svg-container {
     display: flex;
     justify-content: space-evenly;
-    padding: 64px 0 0 0;
+    padding: 84px 0 64px 0;
 }
 
 .svg-and-text {
@@ -148,6 +148,7 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 12px;
 }
 
 .span-1 {

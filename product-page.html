@@ -91,8 +91,33 @@
 
 <div id="modal" class="modal">
     <div class="modal-content">
+        <img src="assets/images/the-batman-movie-poster.jpg" alt="cover">
+        <div class="movie-info">
+            <span>THE BATMAN</span>
+            <span>Action/Fantasy | 2022 | 2h56m</span>
+            <span>English audio • CC</span>
+            <div>
+                <div>Rent</div>
+                <div>
+                    <button>USD 5.00 HD</button>
+                    <button>USD 4.00 SD</button>
+                </div>
+                <div>Buy</div>
+                <div>
+                    <button>USD 18.00 HD</button>
+                    <button>USD 14.00 SD</button>
+                </div>
+            </div>
+        </div>
         <span class="close" id="closeModalBtn">&times;</span>
-        <p>Modal content here</p>
+        <div class="bottom-left-content">
+            <span><strong>Subtitles: </strong>English CC, Spanish, French, Italian</span>
+            <span class="discount-code">By confirming the purchase, you also accept Square Eyes general terms and conditions and that there is no right of withdrawal.</span>
+            <span>Use discount code</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                <path d="M6.99999 8C6.43466 8 5.86933 7.74876 5.44129 7.25559L0.175657 1.18872C-0.0585522 0.918876 -0.0585522 0.472233 0.175657 0.202385C0.409865 -0.0674618 0.797521 -0.0674618 1.03173 0.202385L6.29736 6.26926C6.68502 6.7159 7.31496 6.7159 7.70261 6.26926L12.9683 0.202385C13.2025 -0.0674618 13.5901 -0.0674618 13.8243 0.202385C14.0586 0.472233 14.0586 0.918876 13.8243 1.18872L8.55869 7.25559C8.13065 7.74876 7.56532 8 6.99999 8Z" fill="white"/>
+            </svg>
+        </div>
     </div>
 </div>
 
@@ -101,7 +126,7 @@
         The Batman
     </div>
     <div class="btn-container">
-        <button class="see-now">
+        <button id="openModalBtn2" class="see-now">
             <i class="fa-sharp fa-solid fa-play" style="color: #ffffff;"></i>
             See now
         </button>
@@ -143,7 +168,9 @@
         <div class="img-container">
             <img src="assets/images/the-batman.jpeg" alt="the-batman-trailer">
             <i class="fa-sharp fa-solid fa-play play-button" style="color: #ffffff;"></i>
-            <p class="trailer-text">The Batman - Trailer</p>
+            <div>
+                <p class="trailer-text">The Batman - Trailer</p>
+            </div>
         </div>
     </div>
     <div class="similar-movies-text">
@@ -166,6 +193,12 @@
             <img src="assets/images/gemini-man-poster.jpg" alt="gemini-man">
             <i class="fas fa-play play-button"></i>
         </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn2">&times;</span>
     </div>
 </div>
 

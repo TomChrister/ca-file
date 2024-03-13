@@ -710,3 +710,14 @@ footer ul li {
 .discount-code {
     font-size: 8px;
 }
+
+.btn-orange {
+    width: 100px;
+    height: 36px;
+    gap: 6px;
+}
+
+.button-container {
+    display: flex;
+    gap: 8px;
+}
